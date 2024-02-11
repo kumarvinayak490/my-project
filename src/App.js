@@ -1,14 +1,13 @@
 import Avatar from "./components/Avatar";
+import Miscellaneous from "./components/Miscellaneous";
 import MyAchievements from "./components/MyAchievements";
-import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
-import YTVideos from "./components/YTVideos";
 
 function App() {
   return (
     <>
-      <section className="w-screen h-screen flex flex-col items-center pt-2 gap-8">
+      <div className="w-screen h-screen flex flex-col items-center pt-2 gap-14">
         <nav className="w-2/6 flex justify-center  items-center  backdrop-blur-md  rounded-md px-2 ">
           <div>
             <Avatar />
@@ -307,10 +306,10 @@ function App() {
           </article>
         </main>
         <Works />
-        <Skills />
         <MyAchievements />
-        <YTVideos />
-      </section>
+        <Miscellaneous />
+        <Skills />
+      </div>
     </>
   );
 }

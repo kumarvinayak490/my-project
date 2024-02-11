@@ -4,9 +4,6 @@ import Container from "./common/Container";
 const MyAchievements = () => {
   return (
     <Container>
-      <h1 className="mb-8 text-center text-5xl font-normal bg-gradient-to-r from-purple-600 to-green-500  text-transparent bg-clip-text">
-        Winner !
-      </h1>
       <div className="flex gap-x-8">
         <div className="w-2/5  h-[500px] flex items-center justify-center">
           <div className="rounded-md ">

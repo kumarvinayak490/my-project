@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.paused {
+	  animation-play-state: paused;
+	}
+  }
+
 @font-face {
   font-family: "Geist Sans";
   src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
@@ -11,6 +17,7 @@
 *:after,
 *:before {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 :root {
