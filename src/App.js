@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import Avatar from "./components/Avatar";
 import Miscellaneous from "./components/Miscellaneous";
 import MyAchievements from "./components/MyAchievements";
@@ -5,6 +6,24 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 
 function App() {
+  const typeWriterValues = ["Creator", "Developer", "Builder", "Engineer"];
+  let i = 0;
+  const updateValue = (node) => {
+    if (node !== null) {
+      if (i === typeWriterValues.length) {
+        i = 0;
+        node.innerText = typeWriterValues[i];
+        i++;
+      } else {
+        node.innerText = typeWriterValues[i];
+        i++;
+      }
+    }
+    setTimeout(updateValue.bind(null, node), 4000);
+  };
+  const textRef = useCallback((node) => {
+    updateValue(node);
+  }, []);
   return (
     <>
       <div className="w-screen h-screen flex flex-col items-center pt-2 gap-14">
@@ -39,12 +58,18 @@ function App() {
             </li>
           </ul>
         </nav>
-        <h1 className="text-8xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text">
-          Thinker, Builder
-        </h1>
-        <h1 className="text-8xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text">
-          Innovator, Creator
-        </h1>
+        <header className="flex flex-col items-center gap-1">
+          <h1 className="text-8xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text">
+            Thinker, Innovator
+          </h1>
+
+          <h1
+            ref={textRef}
+            className="inline-block animate-typing overflow-hidden whitespace-nowrap text-8xl text-center bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+          >
+            Creator
+          </h1>
+        </header>
         <main>
           <article>
             <div className="header">
