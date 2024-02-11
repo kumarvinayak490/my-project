@@ -1,22 +1,42 @@
+import Avatar from "./components/Avatar";
+import MyAchievements from "./components/MyAchievements";
 import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
+import YTVideos from "./components/YTVideos";
 
 function App() {
   return (
     <>
       <section className="w-screen h-screen flex flex-col items-center pt-2 gap-8">
-        <nav className="w-1/5 mx-auto py-2 flex justify-between  backdrop-blur-md bg-slate-400 rounded-md px-4">
-          <div>Avatar</div>
-          <ul className="flex gap-6">
+        <nav className="w-2/6 flex justify-center  items-center  backdrop-blur-md  rounded-md px-2 ">
+          <div>
+            <Avatar />
+          </div>
+          <ul className="flex gap-6 ">
             <li>
-              <a href="#works">Works</a>
+              <a
+                href="#works"
+                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+              >
+                Works
+              </a>
             </li>
             <li>
-              <a href="#cv">CV</a>
+              <a
+                href="#cv"
+                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+              >
+                CV
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -288,6 +308,8 @@ function App() {
         </main>
         <Works />
         <Skills />
+        <MyAchievements />
+        <YTVideos />
       </section>
     </>
   );
