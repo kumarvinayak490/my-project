@@ -80,7 +80,7 @@ const Works = () => {
   ];
   return (
     <div className="w-full ">
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center font-extrabold text-4xl mb-12">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center font-extrabold text-4xl mb-12 ">
         {" "}
         My Projects
       </h1>
