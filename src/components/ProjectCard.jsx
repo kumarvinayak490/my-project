@@ -3,7 +3,7 @@ import Logo from "../logo.svg";
 
 const ProjectCard = ({ imageSrc, imageAlt, title, description, link }) => {
   return (
-    <article className="bg-white/90 shadow-2xl rounded-md w-[400px] flex flex-col items-center gap-y-2 pb-4">
+    <article className="bg-white/90 shadow-2xl rounded-md  w-[400px] flex flex-col items-center gap-y-2 pb-4">
       <div className="w-full h-[200px] rounded-t-md mb-4">
         <img
           src={imageSrc}
@@ -11,7 +11,7 @@ const ProjectCard = ({ imageSrc, imageAlt, title, description, link }) => {
           className="rounded-t-md h-full w-full object-cover"
         />
       </div>
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 h-[200px]">
         <div>
           <h1 className="text-2xl text-center mb-1 font-sans text-zinc-600 font-medium ">
             {title}

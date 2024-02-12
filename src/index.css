@@ -38,6 +38,7 @@ body {
 	background-color: hsl(0 0% 100%);
 	font-weight: 80;
 	transition: background-color 0.25s, color 0.25s;
+	overflow-x:hidden ;
 }
 
 main {

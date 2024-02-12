@@ -1,9 +1,11 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useRef } from "react";
+
 import Avatar from "./components/Avatar";
 import Miscellaneous from "./components/Miscellaneous";
 import MyAchievements from "./components/MyAchievements";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
+import LetsConnect from "./components/LetsConnect";
 
 function App() {
   const typeWriterValues = ["Creator", "Developer", "Builder", "Engineer"];
@@ -24,14 +26,15 @@ function App() {
   const textRef = useCallback((node) => {
     updateValue(node);
   }, []);
+
   return (
     <>
-      <div className="w-screen h-screen flex flex-col items-center pt-2 gap-14">
-        <nav className="w-2/6 flex justify-center  items-center  backdrop-blur-md  rounded-md px-2 ">
+      <div className="w-screen h-screen flex flex-col pt-2 gap-8">
+        <nav className=" flex justify-between   items-center  backdrop-blur-md  rounded-md px-20 ">
           <div>
             <Avatar />
           </div>
-          <ul className="flex gap-6 ">
+          <ul className="flex gap-6  ">
             <li>
               <a
                 href="#works"
@@ -70,7 +73,7 @@ function App() {
             Creator
           </h1>
         </header>
-        <main>
+        <main id="main">
           <article>
             <div className="header">
               <h2 className="text-center pb-2 ">
@@ -334,6 +337,7 @@ function App() {
         <MyAchievements />
         <Miscellaneous />
         <Skills />
+        <LetsConnect />
       </div>
     </>
   );
