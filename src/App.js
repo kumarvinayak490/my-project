@@ -4,7 +4,7 @@ import Avatar from "./components/Avatar";
 import Miscellaneous from "./components/Miscellaneous";
 import MyAchievements from "./components/MyAchievements";
 import Skills from "./components/Skills";
-import Works from "./components/Works";
+import Works, { MobileWorks } from "./components/Works";
 import LetsConnect from "./components/LetsConnect";
 
 function App() {
@@ -333,7 +333,12 @@ function App() {
             </div>
           </article>
         </main>
-        <Works />
+        <div className="hidden md:block container">
+          <Works />
+        </div>
+        <div className="block md:hidden container">
+          <MobileWorks />
+        </div>
         <MyAchievements />
         <Miscellaneous />
         <Skills />
