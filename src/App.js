@@ -333,8 +333,7 @@ function App() {
             </div>
           </article>
         </main>
-
-        {/* <Works /> */}
+        <Works />
         <MyAchievements />
         <Miscellaneous />
         <Skills />
