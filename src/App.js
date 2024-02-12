@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen flex flex-col pt-2 gap-8">
+      <div className="w-screen h-screen flex flex-col pt-2 gap-6">
         <nav className=" flex justify-between   items-center  backdrop-blur-md  rounded-md px-20 ">
           <div>
             <Avatar />

@@ -33,45 +33,57 @@ const Works = () => {
       gsapHook.context.kill();
     };
   }, [gsapHook]);
+
   const projectImages = [
     {
-      image: "/assets/images/central-auth.jpeg",
-      link: "https://support.ineuron.ai",
+      image: "/assets/images/support-system.jpeg",
+      link: "https://support.ineuron.ai/",
       title: "Support System",
       description:
-        " Empowering enrolled students with a comprehensive platform for seamless collaboration. Here, students can engage in lively discussions, ask questions, and vote on relevant topics to enhance their learning experience",
+        "Developed a platform for students to engage in doubt resolution through interactive chats, enabling them to raise and resolve queries within a 24-hour timeframe. Additionally, developed an algorithm to facilitate peer pairing by grouping students based on their course performance, promoting regular reshuffling of groups to foster increased connections and camaraderie",
     },
     {
-      image: "/assets/images/central-auth.jpeg",
-      link: "https://support.ineuron.ai",
-      title: "Support System",
+      image: "/assets/images/central-auth.png",
+      link: "https://account.ineuron.ai/",
+      title: "Central Auth for Ineuron",
       description:
-        " Empowering enrolled students with a comprehensive platform for seamless collaboration. Here, students can engage in lively discussions, ask questions, and vote on relevant topics to enhance their learning experience",
+        "Developed a central authentication system to verify users across 10 platforms. Additionally, incorporated Google login functionality and implemented code to support potential integration with other providers in the future",
+    },
+    {
+      image: "/assets/images/findemy.png",
+      link: "https://findemy.co.uk/",
+      title: "Findemy",
+      description:
+        "The website is a comprehensive resource for individuals seeking to enhance their financial literacy. It offers online courses tailored for beginners entering the world of investing, as well as for those already familiar with financial assets.",
     },
     {
       image: "/assets/images/job-portal.png",
       link: "https://jobs.ineuron.ai",
       title: "Job Portal",
       description:
-        " Empowering enrolled students with a comprehensive platform for seamless collaboration. Here, students can engage in lively discussions, ask questions, and vote on relevant topics to enhance their learning experience",
+        " The job portal built using React and Next.js offers a seamless user experience for both job seekers and recruiters. Leveraging React Query for efficient data management, users can effortlessly search, browse, and apply for jobs.",
     },
     {
-      image: "/assets/images/support-system.jpeg",
-      link: "https://pwskills.com",
-      title: "PW Skills Learning",
+      image: "/assets/images/geu.png",
+      link: "https://geu.ac.in/",
+      title: "Graphic Era University",
       description:
-        " Empowering enrolled students with a comprehensive platform for seamless collaboration. Here, students can engage in lively discussions, ask questions, and vote on relevant topics to enhance their learning experience",
+        "Designed and developed a dynamic university website aimed at providing extensive information about the institution, its programs, faculty, and facilities. Through a streamlined admission process, individuals can submit their applications online, and the system conducts an eligibility assessment based on predetermined criteria",
     },
     {
-      image: "/assets/images/support-system.jpeg",
-      link: "https://pwskills.com",
-      title: "PW Skills Learning",
+      image: "/assets/images/lms2.png",
+      link: "https://learn.ineuron.ai/",
+      title: "Learning Management System",
       description:
-        " Empowering enrolled students with a comprehensive platform for seamless collaboration. Here, students can engage in lively discussions, ask questions, and vote on relevant topics to enhance their learning experience",
+        "Developed a learning management system that enables students to acquire new skills and schedule learning reminders. The system is designed to deliver a quality learning experience while implementing DRM security measures to combat plagiarism",
     },
   ];
   return (
     <div className="w-full ">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center font-extrabold text-4xl mb-12">
+        {" "}
+        My Projects
+      </h1>
       <div ref={triggerContainer} className="w-min">
         <div
           id="works"

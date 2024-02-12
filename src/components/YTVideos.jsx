@@ -4,7 +4,7 @@ import Container from "./common/Container";
 const YTVideos = () => {
   const myVideos = [""];
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-col gap-y-8 md:flex-row md:gap-y-0 justify-between items-center">
       <div>
         <iframe
           width="355"

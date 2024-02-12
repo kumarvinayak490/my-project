@@ -13,7 +13,12 @@ const LetsConnect = () => {
       <div className="flex justify-between items-center py-8  ">
         <div className="bg-gradient-to-r from-slate-400  to-zinc-200 flex-1 rounded-l-md">
           <div className=" flex flex-col items-center gap-y-4 p-4">
-            <h2 className="text-white font-serif">Get in touch with me on</h2>
+            <h2 className="text-white font-serif hidden md:block">
+              Get in touch with me on
+            </h2>
+            <h2 className="text-white font-serif block md:hidden">
+              Connect on
+            </h2>
             <ul className="flex  items-center gap-x-6">
               <li title="X.Com (Formerly Twitter)">
                 <a href="https://twitter.com/vinayak490">

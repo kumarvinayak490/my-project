@@ -7,7 +7,7 @@ const Miscellaneous = () => {
   return (
     <Container>
       <div className="flex flex-col gap-y-12">
-        <div className="flex justify-between p-4  ">
+        <div className="flex flex-col md:flex-row md:gap-y-0 gap-y-5 justify-between p-4  ">
           <div className="flex-1 flex flex-col gap-8 py-6">
             <h2 className="text-2xl font-semibold text-zinc-900">
               <ArticlesIcon />{" "}
