@@ -112,7 +112,7 @@ const Miscellaneous = () => {
               </div>
             </article>
           </div>
-          <div className="flex-1 flex justify-end  ">
+          <div className="flex-1 flex justify-end " id="cv">
             <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 flex flex-col justify-between">
               <h2 className="flex text-2xl font-semibold text-zinc-900">
                 <svg
