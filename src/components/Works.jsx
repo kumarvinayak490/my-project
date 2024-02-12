@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import ProjectCard from "./ProjectCard";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

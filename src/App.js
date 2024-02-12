@@ -37,14 +37,6 @@ function App() {
           <ul className="flex gap-4 md:gap-6 p-2  ">
             <li>
               <a
-                href="#works"
-                className="text-xl md:text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
-              >
-                Works
-              </a>
-            </li>
-            <li>
-              <a
                 href="#cv"
                 className="text-xl md:text-2xl  text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
               >
