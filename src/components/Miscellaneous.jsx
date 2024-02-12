@@ -4,11 +4,34 @@ import YTVideos from "./YTVideos";
 import ArticlesIcon from "../Icnons/ArticlesIcon";
 
 const Miscellaneous = () => {
+  const experience = [
+    {
+      logo: "/assets/images/ineuron_ai_logo.svg",
+      companyName: "iNeuron",
+      fronmDate: "2023",
+      toDate: "Present",
+      position: "Software Engineer",
+    },
+    {
+      logo: "/assets/images/tcz_logo.png",
+      companyName: "TechChefz",
+      fronmDate: "2022",
+      toDate: "2023",
+      position: "Senior Associate",
+    },
+    {
+      logo: "/assets/images/techenutia_logo.jpeg",
+      companyName: "Techenutia",
+      fronmDate: "2021",
+      toDate: "2022",
+      position: "React Developer",
+    },
+  ];
   return (
     <Container>
-      <div className="flex flex-col gap-y-12">
-        <div className="flex flex-col md:flex-row md:gap-y-0 gap-y-5 justify-between p-4  ">
-          <div className="flex-1 flex flex-col gap-8 py-6">
+      <div className="flex flex-col gap-y-12 w-full">
+        <div className="flex w-full flex-col gap-x-0 md:flex-row md:gap-y-0 md:gap-x-8  gap-y-5 justify-between p-4  ">
+          <div className="md:flex-1 flex flex-col gap-8 py-6">
             <h2 className="text-2xl font-semibold text-zinc-900">
               <ArticlesIcon />{" "}
               <span className="ml-3 text-zinc-900">My Articles</span>
@@ -112,8 +135,8 @@ const Miscellaneous = () => {
               </div>
             </article>
           </div>
-          <div className="flex-1 flex justify-end " id="cv">
-            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 flex flex-col justify-between">
+          <div className="md:flex-1 flex w-full" id="cv">
+            <div className="rounded-2xl w-full border border-zinc-400 p-6  flex flex-col justify-between">
               <h2 className="flex text-2xl font-semibold text-zinc-900">
                 <svg
                   viewBox="0 0 24 24"
@@ -136,108 +159,52 @@ const Miscellaneous = () => {
                 <span className="ml-3 text-zinc-900">Work Experience</span>
               </h2>
               <ol className="mt-6 space-y-4 flex flex-col gap-y-8">
-                <li className="flex gap-4">
-                  <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50  dark:ring-0">
-                    <img
-                      alt="logo3"
-                      loading="lazy"
-                      width={28}
-                      height={28}
-                      decoding="async"
-                      data-nimg={1}
-                      className="h-7 w-7"
-                      style={{ color: "transparent" }}
-                      src="/assets/images/ineuron_ai_logo.svg"
-                    />
-                  </div>
-                  <dl className="flex flex-auto flex-wrap gap-x-2">
-                    <dt className="sr-only">Company</dt>
-                    <dd className="w-full flex-none text-sm font-medium text-zinc-900 ">
-                      iNeuron (PhysicsWallah)
-                    </dd>
-                    <dt className="sr-only">Role</dt>
-                    <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                      Software Engineer
-                    </dd>
-                    <dt className="sr-only">Date</dt>
-                    <dd
-                      className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                      aria-label="2011 until 2014"
-                    >
-                      <time dateTime={2023}>2023</time>{" "}
-                      <span aria-hidden="true">—</span>{" "}
-                      <time dateTime={2024}>Present</time>
-                    </dd>
-                  </dl>
-                </li>
-                <li className="flex gap-4">
-                  <div className="relative overflow-hidden mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                    <img
-                      alt="logo2"
-                      loading="lazy"
-                      width={28}
-                      height={28}
-                      decoding="async"
-                      data-nimg={1}
-                      className="h-full w-full"
-                      style={{ color: "transparent" }}
-                      src="/assets/images/tcz_logo.png"
-                    />
-                  </div>
-                  <dl className="flex flex-auto flex-wrap gap-x-2">
-                    <dt className="sr-only">Company</dt>
-                    <dd className="w-full flex-none text-sm font-medium text-zinc-900">
-                      TechChefz
-                    </dd>
-                    <dt className="sr-only">Role</dt>
-                    <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                      Senior Associate - Technology
-                    </dd>
-                    <dt className="sr-only">Date</dt>
-                    <dd
-                      className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                      aria-label="2014 until 2019"
-                    >
-                      <time dateTime={2022}>2022</time>{" "}
-                      <span aria-hidden="true">—</span>{" "}
-                      <time dateTime={2023}>2023</time>
-                    </dd>
-                  </dl>
-                </li>
-                <li className="flex gap-4">
-                  <div className="relative overflow-hidden mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                    <img
-                      alt="logo1"
-                      loading="lazy"
-                      width={32}
-                      height={32}
-                      decoding="async"
-                      data-nimg={1}
-                      className="h-full w-full"
-                      style={{ color: "transparent" }}
-                      src="/assets/images/techenutia_logo.jpeg"
-                    />
-                  </div>
-                  <dl className="flex flex-auto flex-wrap gap-x-2">
-                    <dt className="sr-only">Company</dt>
-                    <dd className="w-full flex-none text-sm font-medium text-zinc-900">
-                      Techenutia
-                    </dd>
-                    <dt className="sr-only">Role</dt>
-                    <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                      React Developer
-                    </dd>
-                    <dt className="sr-only">Date</dt>
-                    <dd
-                      className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                      aria-label="2019 until Present"
-                    >
-                      <time dateTime={2021}>2021</time>{" "}
-                      <span aria-hidden="true">—</span>{" "}
-                      <time dateTime={2022}>2022</time>
-                    </dd>
-                  </dl>
-                </li>
+                {experience.map((exp) => {
+                  return (
+                    <li className="flex justify-between  gap-4">
+                      <div className="flex gap-2">
+                        <div className="relative  mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50  dark:ring-0">
+                          <img
+                            alt="logo3"
+                            loading="lazy"
+                            width={28}
+                            height={28}
+                            decoding="async"
+                            data-nimg={1}
+                            className="h-7 w-7"
+                            style={{ color: "transparent" }}
+                            src={exp.logo}
+                          />
+                        </div>
+                        <div>
+                          <h1 className=" text-sm font-medium text-gray-900 font-sans  mb-1">
+                            {exp.companyName}
+                          </h1>
+                          <p className="text-xs text-zinc-500 ">
+                            {exp.position}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex  flex-1 items-end pb-1">
+                        <p className="ml-auto text-xs text-zinc-400 ">
+                          <time dateTime={Number(exp.fronmDate)}>
+                            {exp.fronmDate}
+                          </time>{" "}
+                          <span aria-hidden="true">—</span>{" "}
+                          <time
+                            dateTime={
+                              exp.toDate === "Present"
+                                ? new Date().getFullYear()
+                                : Number(exp.toDate)
+                            }
+                          >
+                            {exp.toDate}
+                          </time>
+                        </p>
+                      </div>
+                    </li>
+                  );
+                })}
               </ol>
               <a
                 className="  inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-900 font-medium text-white hover:bg-zinc-700  bg-zinc-800/50  group mt-6 w-full"

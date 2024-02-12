@@ -30,15 +30,15 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen flex flex-col pt-2 gap-6">
-        <nav className=" flex justify-between   items-center  backdrop-blur-md  rounded-md px-20 ">
+        <nav className="flex justify-between items-center backdrop-blur-md rounded-md px-4 md:px-20 ">
           <div>
             <Avatar />
           </div>
-          <ul className="flex gap-6  ">
+          <ul className="flex gap-4 md:gap-6 p-2  ">
             <li>
               <a
                 href="#works"
-                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+                className="text-xl md:text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
               >
                 Works
               </a>
@@ -46,7 +46,7 @@ function App() {
             <li>
               <a
                 href="#cv"
-                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+                className="text-xl md:text-2xl  text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
               >
                 CV
               </a>
@@ -54,7 +54,7 @@ function App() {
             <li>
               <a
                 href="#contact"
-                className="text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+                className="text-xl md:text-2xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
               >
                 Contact
               </a>
@@ -62,13 +62,13 @@ function App() {
           </ul>
         </nav>
         <header className="flex flex-col items-center gap-1">
-          <h1 className="text-8xl text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text">
+          <h1 className=" text-4xl md:text-8xl  text-center  bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text">
             Thinker, Innovator
           </h1>
 
           <h1
             ref={textRef}
-            className="inline-block animate-typing overflow-hidden whitespace-nowrap text-8xl text-center bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
+            className="inline-block animate-typing overflow-hidden whitespace-nowrap  text-4xl md:text-8xl  text-center bg-gradient-to-r from-gray-800 to-green-500  text-transparent bg-clip-text"
           >
             Creator
           </h1>
@@ -333,7 +333,8 @@ function App() {
             </div>
           </article>
         </main>
-        <Works />
+
+        {/* <Works /> */}
         <MyAchievements />
         <Miscellaneous />
         <Skills />

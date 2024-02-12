@@ -10,7 +10,10 @@ import YoutubeIcon from "../Icnons/YoutubeIcon";
 const LetsConnect = () => {
   return (
     <Container>
-      <div className="flex justify-between items-center py-8  " id="contact">
+      <div
+        className="flex flex-col gap-y-4 md:flex-row md:gap-y-0 justify-between items-center py-8  "
+        id="contact"
+      >
         <div className="bg-gradient-to-r from-slate-400  to-zinc-200 flex-1 rounded-l-md">
           <div className=" flex flex-col items-center gap-y-4 p-4">
             <h2 className="text-white font-serif hidden md:block">

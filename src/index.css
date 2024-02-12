@@ -25,7 +25,7 @@
 	--transition: 0.15s;
 }
 
-body {
+html, body {
 	font-family: "Geist Sans", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
 	background-image:
 	radial-gradient(
