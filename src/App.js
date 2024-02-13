@@ -68,7 +68,7 @@ function App() {
         <main id="main">
           <article>
             <div className="header">
-              <h2 className="text-center pb-2 ">
+              <h2 className="text-center pb-2 mb-2 ">
                 <span className="text-5xl text-center  bg-gradient-to-r from-orange-400 to-gray-500  text-transparent bg-clip-text">
                   Hey
                 </span>
@@ -76,23 +76,43 @@ function App() {
                   There !
                 </span>
               </h2>
-              <p>
-                My name is <strong>Vinayak</strong> and I am a seasoned
-                Fullstack Developer with expertise in web development,
-                specializing in both frontend and backend technologies.
-                Proficient in frameworks such as React, Next.js, and Node.js, I
-                have a proven track record of creating dynamic and user-friendly
-                web applications. My skills extend to UI/UX design, where I
-                prioritize creating intuitive interfaces and engaging user
-                experiences. Notable achievements include developing a central
-                authentication application with React, incorporating custom
-                hooks and seamless integration of Google login functionality.
-                Additionally, I have successfully implemented scroll animations
-                and UI/UX considerations in various projects, resulting in
-                significant improvements in website traffic and user engagement.
-                With a passion for innovation and a commitment to excellence, I
-                am dedicated to delivering impactful solutions that meet the
-                needs of clients and users alike.
+              <p className="flex flex-col gap-y-1">
+                <span>
+                  I'm a versatile fullstack developer with expertise in React,
+                  Next.js, Node.js, and Golang. With a passion for crafting
+                  robust and innovative solutions, I've built a diverse range of
+                  applications, including chat applications, central
+                  authentication systems, and job portals.
+                </span>
+                <br />
+                <span>
+                  In my journey as a developer, I've leveraged React and Next.js
+                  to create engaging and responsive user interfaces, ensuring
+                  seamless experiences for end-users. My proficiency in Node.js
+                  has empowered me to develop powerful backend systems, enabling
+                  efficient data management and seamless communication between
+                  client and server.
+                </span>
+                <br />{" "}
+                <span>
+                  Additionally, my expertise in Golang has enabled me to build
+                  high-performance applications with concurrency and scalability
+                  in mind. From developing chat applications that facilitate
+                  real-time communication to crafting central authentication
+                  systems for seamless user management across multiple
+                  applications, I've demonstrated a commitment to excellence in
+                  every project I undertake.
+                </span>{" "}
+                <br />{" "}
+                <span>
+                  With a strong foundation in frontend and backend development,
+                  coupled with a passion for learning and innovation, I'm
+                  excited to continue pushing the boundaries of what's possible
+                  in web development. Whether it's building intuitive user
+                  interfaces or architecting robust backend systems, I'm
+                  dedicated to delivering exceptional solutions that make a
+                  positive impact.
+                </span>
               </p>
             </div>
             <div className="window">
